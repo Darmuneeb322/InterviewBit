@@ -1,4 +1,6 @@
-//It has to move in x and y; So in movement b/w two points the minimum of the two can be covered by moving diagonally while also covering the largest one. SO essentially only the largest among the two determines the least steps required.
+//It has to move in x and y; So in movement b/w two
+//points the minimum of the two can be covered by moving diagonally
+//while also covering the largest one. SO essentially only the largest among the two determines the least steps required.
 
 
 int abss(int a,int b)
