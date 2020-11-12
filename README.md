@@ -1,2 +1,2 @@
-# InterviewBit
-Solution to questions on InterviewBit
+#competitive
+Solution to fundamental questions 
