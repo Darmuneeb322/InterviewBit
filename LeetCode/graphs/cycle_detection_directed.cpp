@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-bool dfsutil(int v, vector<int> &vis, vector<vector<int>> &adj)
+bool dfsutil(int v, vector<int> &vis, vector<vector< int > > &adj)
 {
     if (vis[v] == 1)
         return true;
@@ -11,12 +11,13 @@ bool dfsutil(int v, vector<int> &vis, vector<vector<int>> &adj)
     vis[v] = 1;
     for (int i = 0; i < adj[v].size(); i++)
     {
-        return dfsutil(adj[v][i], vis, adj);
+    	if(dfsutil(adj[v][i], vis, adj))
+        return true;
     }
     vis[v] = 2;
     return false;
 }
-bool dfs(int n, vector<vector<int>> &adj)
+bool dfs(int n, vector<vector<int> > &adj)
 {
     vector<int> vis(n, 0);
     for (int i = 0; i < n; i++)
@@ -33,7 +34,7 @@ int main()
 
     cout << "Enter number of edges follwed by number of nodes" << endl;
     cin >> m >> n;
-    vector<vector<int>> adj(n);
+    vector<vector<int> > adj(n);
     int a, b;
     while (m--)
     {
