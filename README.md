@@ -1,2 +1,2 @@
-#competitive
+#Competitive
 Solution to fundamental questions 
